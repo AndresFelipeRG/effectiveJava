@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
-@Accessors(chain = true)//adds return this to each setters
+@Accessors(chain = true)//adds return this to each setter function
 public class UserDto {
 
     private String username;
