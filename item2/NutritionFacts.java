@@ -41,9 +41,13 @@ public class NutritionFacts {
             this.carbohydrate = val;
             return this;
         }
+
+        public NutritionFacts build() {
+            return new NutritionFacts(this);
+        }
     }
 
-    private NutritionFacts(Builder builder){
+    private NutritionFacts(Builder builder) {
         servingSize = builder.servingSize;
         servings = builder.servings;
         calories = builder.calories;
