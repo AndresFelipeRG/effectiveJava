@@ -2,21 +2,24 @@
 public class ElvisSingleton {
 
 
-   private String s;
+    private String s;
 
-   private ElvisSingleton (String s){
-      this.s = s;
-   }
-   
-   public static class ElvisSingletonHolder {
-       
-       private static final INSTANCE = new ElvisSingleton("name");
+    private static String b;
 
-   }
-   
-     public static ElvisSingleton getInstance(){
-       
-         return ElvisSingletonHolder.INSTANCE;
-       
-       }
+    private ElvisSingleton(String s) {
+        this.s = s;
+    }
+
+    public static class ElvisSingletonHolder {
+
+        private static final ElvisSingleton INSTANCE = new ElvisSingleton("name");
+    }
+
+
+    public static ElvisSingleton getInstance() {
+
+
+        return ElvisSingletonHolder.INSTANCE;
+
+    }
 }
