@@ -1,10 +1,10 @@
 package com.effectivejava.items.utility.security;
 
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
 
 @AllArgsConstructor
-@NoArgsConstructor
+@Getter
 public enum RoleNames {
     USER("USER"),
     ADMIN("ADMIN");
